@@ -1,3 +1,5 @@
+# © Copyright 2022, Jacob Searcy, All rights reserved.
+
 function Install-MISCapp {
 
     [CmdletBinding()]
@@ -107,7 +109,7 @@ $search_form.AutoSize = $true
 $search_form.StartPosition = 'CenterScreen'
 $search_form.TopMost = $true
 
-$image = [System.Drawing.Image]::FromFile("\\wnis01\ftp$\Tools\Resources\SNAM Records\search_icon.jpeg")
+$image = [System.Drawing.Image]::FromFile("$PSScriptRoot\Files\search_icon.jpeg")
 
 #ComputerName List
 $Computer_label = New-Object System.Windows.Forms.Label
